@@ -4,7 +4,7 @@ Extracts events from files in a Google Cloud Storage bucket.
 
 Example use-cases:
 
- * Read https://cloud.google.com/stackdriver/[Stackdriver logs] from a Cloud Storage bucket into Elastic.
+ * Read [Stackdriver logs](https://cloud.google.com/stackdriver/) from a Cloud Storage bucket into Elastic.
  * Read gzipped logs from cold-storage into Elastic.
  * Restore data from an Elastic dump.
  * Extract data from Cloud Storage, transform it with Logstash and load it into BigQuery.
@@ -66,7 +66,7 @@ bin/logstash-plugin install --no-verify logstash-input-google_cloud_storage
 ```
 - Run Logstash with your plugin
 ```sh
-bin/logstash -e 'inpug {google_cloud_storage {}}'
+bin/logstash -e 'input {google_cloud_storage {}}'
 ```
 At this point any modifications to the plugin code will be applied to this local Logstash setup. After modifying the plugin, simply rerun Logstash.
 
