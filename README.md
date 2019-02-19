@@ -35,6 +35,7 @@ Need help? Try #logstash on freenode IRC or the https://discuss.elastic.co/c/log
 
 - Install dependencies
 ```sh
+./gradlew vendor
 bundle install
 ```
 
